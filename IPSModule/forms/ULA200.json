@@ -1,0 +1,18 @@
+{
+	"elements":
+	[
+		{ "name": "LCDRows", "type": "NumberSpinner", "caption": "Rows" },
+		{ "name": "LCDCols", "type": "NumberSpinner", "caption": "Cols" },
+		{ "name": "Backlight", "type": "CheckBox", "caption": "Backlight" }
+	],
+    
+	"actions":
+	[
+		{ "type": "Button", "label": "Test", "onClick":
+                "ULA200_LCDBacklight($id,true);
+                ULA200_LCDText($id,'Hallo IPS');
+                sleep(5);
+                ULA200_LCDBacklight($id,false);
+                ULA200_LCDCLS($id);" }
+	]
+}

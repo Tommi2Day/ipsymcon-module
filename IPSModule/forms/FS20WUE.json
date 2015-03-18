@@ -1,0 +1,10 @@
+{
+	"elements":
+	[
+		{ "name": "RainPerCount", "type": "NumberSpinner", "caption": "mm per count (*1000)" },
+                { "name": "AutoCreate", "type": "CheckBox", "caption": "Enable automatic creation of new devices" },
+                { "type": "Label", "label": "--if you need this :-)) ---------" },
+                { "name": "LogFile", "type": "ValidationTextBox", "caption": "LogFile (optional)" }
+
+	]
+}

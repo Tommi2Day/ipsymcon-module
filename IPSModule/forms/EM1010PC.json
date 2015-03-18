@@ -1,0 +1,16 @@
+{
+	"elements":
+	[
+		{ "name": "Interval", "type": "IntervalBox", "caption": "Read Interval in Sec" },
+		{ "name": "Port", "type": "Select", "caption": "Port", "options": [] },
+                { "name": "AutoCreate", "type": "CheckBox", "caption": "Enable automatic creation of new devices" },
+                { "type": "Label", "label": "--if you need this :-)) ---------" },
+                { "name": "LogFile", "type": "ValidationTextBox", "caption": "LogFile (optional)" }
+	],
+
+	"actions":
+	[
+		{ "type": "Button", "label": "Update", "onClick": "EM1010PC_Update($id);" }
+	]
+	
+}

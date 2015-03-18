@@ -1,0 +1,19 @@
+{
+	"elements":
+	[
+		{ "name": "ReadInterval", "type": "IntervalBox", "caption": "Read Interval in Sec" },
+                { "name": "AutoCreate", "type": "CheckBox", "caption": "Enable automatic creation of new devices" },
+                { "type": "Label", "label": "--if you need this :-)) ---------" },
+                { "name": "LogFile", "type": "ValidationTextBox", "caption": "LogFile (optional)" },
+                { "name": "WSWinFile", "type": "ValidationTextBox", "caption": "WSWin File (optional)" },
+		{ "type": "Label",  "label": "Changes here needs Apply followed by 'Set WS300config'" },
+		{ "name": "RainPerCount", "type": "NumberSpinner", "caption": "mm per count (*1000)" },
+                { "name": "Altitude", "type": "NumberSpinner", "caption": "Altitude (m)" }
+	],
+        "actions":
+	[
+		{ "type": "Button", "label": "Update", "onClick": "WS300PC_Update($id);" },
+        { "type": "Label",  "label": "This will rewrite your WS300PC settings followed by a Resync" },
+		{ "type": "Button", "label": "Set WS300config", "onClick": "WS300PC_SetConfig($id);" }
+	]
+}

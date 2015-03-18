@@ -1,0 +1,10 @@
+{	"elements":
+	[
+	],
+	
+	"actions":
+		[
+			{ "type": "Button", "label": "On", "onClick": "SI1_SwitchMode($id,true);" },
+			{ "type": "Button", "label": "Off", "onClick": "SI1_SwitchMode($id,false);" }
+		]
+}

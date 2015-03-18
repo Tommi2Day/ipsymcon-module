@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{f0bdda50-6f78-4022-b55d-2f94227ac40f}</ProjectGuid>
+    <MainSource>LCP100.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>..\IPSModule\modules\LCP100.dll</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_ExeOutput>..\IPSModule\modules</DCC_ExeOutput>
+    <DCC_DcuOutput>..\IPSModule\dcu</DCC_DcuOutput>
+    <DCC_ObjOutput>..\IPSModule\dcu</DCC_ObjOutput>
+    <DCC_HppOutput>..\IPSModule\dcu</DCC_HppOutput>
+    <DCC_UnitSearchPath>..\IPSModule\common</DCC_UnitSearchPath>
+    <DCC_ResourcePath>..\IPSModule\common</DCC_ResourcePath>
+    <DCC_ObjPath>..\IPSModule\common</DCC_ObjPath>
+    <DCC_IncludePath>..\IPSModule\common</DCC_IncludePath>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_ExeOutput>C:\IP-Symcon\modules</DCC_ExeOutput>
+    <DCC_DcuOutput>..\IPSModule\dcu</DCC_DcuOutput>
+    <DCC_ObjOutput>..\IPSModule\dcu</DCC_ObjOutput>
+    <DCC_HppOutput>..\IPSModule\dcu</DCC_HppOutput>
+    <DCC_UnitSearchPath>..\IPSModule\common</DCC_UnitSearchPath>
+    <DCC_ResourcePath>..\IPSModule\common</DCC_ResourcePath>
+    <DCC_ObjPath>..\IPSModule\common</DCC_ObjPath>
+    <DCC_IncludePath>..\IPSModule\common</DCC_IncludePath>
+    <DCC_Define>DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="RunParams">/noservice</Parameters><Parameters Name="HostApplication">C:\IP-Symcon\ips.exe</Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="DebugCWD">C:\IP-Symcon</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">True</VersionInfo><VersionInfo Name="MajorVer">3</VersionInfo><VersionInfo Name="MinorVer">1</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">26</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">True</VersionInfo><VersionInfo Name="Locale">1031</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">www.tdressler.net</VersionInfoKeys><VersionInfoKeys Name="FileDescription">IP-Symcon LCP100 Module</VersionInfoKeys><VersionInfoKeys Name="FileVersion">3.1.0.26</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright">Thomas Dreßler</VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">3.1.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments">Kernel 3.1.0</VersionInfoKeys></VersionInfoKeys><Excluded_Packages>
+      
+      
+      
+      
+      
+      
+      <Excluded_Packages Name="$(BDS)\bin\dcloffice2k100.bpl">Microsoft Office 2000 Beispiele für gekapselte Komponenten für Automation Server</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dclofficexp100.bpl">Microsoft Office XP Beispiele für gekapselte Komponenten für Automation Server</Excluded_Packages>
+    </Excluded_Packages><Source><Source Name="MainSource">LCP100.dpr</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="LCP100.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="CPDrv.pas" />
+    <DCCReference Include="LCP100i.pas" />
+    <DCCReference Include="LCP100_Cmd.pas" />
+    <DCCReference Include="LCP100_CRC.pas" />
+    <DCCReference Include="LCP100_Frame.pas" />
+    <DCCReference Include="ULCP100Device.pas" />
+    <DCCReference Include="ULCP100interface.pas" />
+    <None Include="..\IPSModule\forms\LCP100.json" />
+  </ItemGroup>
+</Project>

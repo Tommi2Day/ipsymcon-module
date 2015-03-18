@@ -1,0 +1,7 @@
+{
+	"elements":
+	[
+		{ "name": "Echo", "type": "CheckBox", "caption": "Enable Echo" },
+		{ "name": "LogFile", "type": "ValidationTextBox", "caption": "Logfile" }
+	]
+}

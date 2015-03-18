@@ -1,0 +1,20 @@
+{
+	"elements":
+	[
+		{ "name": "Interval", "type": "IntervalBox", "caption": "Read Interval in Sec" },
+                { "name": "RainPerCount", "type": "NumberSpinner", "caption": "mm per count (*1000)" },
+                { "name": "URL", "type": "ValidationTextBox", "caption": "URL" },
+                { "type": "Label", "label": "IPWE Login (optional)" },
+                { "name": "UseBasicAuth", "type": "CheckBox", "caption": "Use Basic Authentication" },
+                { "name": "Username", "type": "ValidationTextBox", "caption": "Username" },
+		{ "name": "Password", "type": "PasswordTextBox", "caption": "Password" },
+                { "name": "AutoCreate", "type": "CheckBox", "caption": "Enable automatic creation of new devices" },
+                { "type": "Label", "label": "--if you need this :-)) ---------" },
+                { "name": "LogFile", "type": "ValidationTextBox", "caption": "LogFile (optional)" },
+                { "name": "WSWinFile", "type": "ValidationTextBox", "caption": "WSWin File (optional)" }
+	],
+        "actions":
+	[
+		{ "type": "Button", "label": "Update", "onClick": "IPWE1_Update($id);" }
+	]
+}

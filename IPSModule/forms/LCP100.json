@@ -1,0 +1,15 @@
+{
+	"elements":
+	[
+		{ "name": "ComPort", "type": "Select", "caption": "Port", "options": [] },
+                { "name": "Backlight", "type": "CheckBox", "caption": "Backlight" }
+	],
+
+	"actions":
+	[
+		{ "type": "Button", "label": "Test Picture", "onClick":
+                        "LCP100_Test($id);
+                        sleep(3);
+                        LCP100_CLS($id)" }
+	]
+}
