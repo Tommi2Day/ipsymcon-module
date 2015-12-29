@@ -1,9 +1,10 @@
 # ipsymcon-module
 this repository contains native modules for the IPSymcon Home Automation System using their Delphi SDK
+As of IPSymcon V4 Delphi Modules are deprecated and partially replaced by PHP Modules
 
 ### Requirements:
-* IPSymcon (http://www.ip-symcon.de/en/)
-* IPSymcon SDK (http://www.ip-symcon.de/service/dokumentation/entwicklerbereich/sdk-tools/)
+* Symcon (https://www.symcon.de/en/)
+* IPSymcon SDK (https://www.symcon.de/service/dokumentation/entwicklerbereich/sdk-tools/sdk-delphi/)
 * Delphi 2006/7 or TurboDelphi
 * compatible hardware devices
 
