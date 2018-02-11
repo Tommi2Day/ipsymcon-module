@@ -1,6 +1,14 @@
 # ipsymcon-module
 this repository contains native modules for the IPSymcon Home Automation System using their Delphi SDK
-As of IPSymcon V4 Delphi Modules are deprecated and partially replaced by PHP Modules
+
+<span style="color:red">
+As of IPSymcon V4 Delphi Modules are deprecated and will not work furthermore . 
+<b>This  repository has been archived and will not be updated </b>
+</span>
+
+
+Some modules has been rewritten using PHP.
+see https://github.com/Tommi2Day/ipsymcon-phpmodule-by-Tommi
 
 ### Requirements:
 * Symcon (https://www.symcon.de/en/)
@@ -27,7 +35,7 @@ ULA200
 Project Page: http://tdressler.net/ipsymcon/ELV2.html (german)
 
 ### EM1010
-Module for énergy counter display ELV EM1010PC and sensors
+Module for energy counter display ELV EM1010PC and sensors
 
 Project Page: http://tdressler.net/ipsymcon/em1010.html
 
